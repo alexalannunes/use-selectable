@@ -1,0 +1,30 @@
+{
+  "name": "use-selectable",
+  "version": "1.0.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts --format esm,cjs --dts"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "hook",
+    "selection"
+  ],
+  "license": "MIT",
+  "author": "alexalannunes",
+  "description": "React hook for item selection",
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.13",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  }
+}
