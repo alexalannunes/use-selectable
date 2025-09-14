@@ -93,4 +93,16 @@ Returns an object with:
 
 **Notes:** The hook automatically removes selections for items no longer present in `data`. Works with any property as the unique identifier, not just `id`.
 
+## Roadmap / Future Plans
+
+- **Default Selected Items**: Allow passing an array of default selected IDs when initializing the hook. This will enable pre-selection of items without extra calls to `setSelectItems`.
+
+- **Core + Adapters Architecture**: Similar to React Table’s approach, a future version of this library may separate the pure selection logic into a standalone package (e.g. `@use-selectable/core`) and keep the React hook as an adapter (`@use-selectable/react`).  
+  This will make the selection logic framework-agnostic, easier to test, and allow adapters for other frameworks such as Vue or Svelte in the future.
+
+- **Improved Testing**: Add unit and integration tests for both the core logic and the React hook using modern testing tools.
+
+*These changes are planned for a future release and may involve a **major version bump** if they introduce breaking changes.*
+
+
 **License:** MIT © Alex Alan Nunes
