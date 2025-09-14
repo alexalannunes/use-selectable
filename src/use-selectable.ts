@@ -77,11 +77,11 @@ export function useSelectable<
   }, [items, data]);
 
   const selectedItems = useMemo(() => {
-    let selectedItems: T[] = [];
+    let selectedItems: T[K][] = [];
     items.forEach((id) => {
       const exist = data.find((item) => item[key] === id);
       if (exist) {
-        selectedItems.push(exist);
+        selectedItems.push(exist[key]);
       }
     });
     return selectedItems;
