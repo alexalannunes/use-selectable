@@ -82,7 +82,7 @@ export default function App() {
 
 Returns an object with:
 
-- `selected: T[]` → Array of currently selected items.
+- `selected: T[]` → Array of currently selected items (based on `key`).
 - `isAllSelected: boolean` → True if all items are selected.
 - `totalSelected: number` → Number of selected items.
 - `toggleItem(id: T[K])` → Toggle selection for an item by its id.
@@ -93,4 +93,4 @@ Returns an object with:
 
 **Notes:** The hook automatically removes selections for items no longer present in `data`. Works with any property as the unique identifier, not just `id`.
 
-**License:** MIT © [Your Name]
+**License:** MIT © Alex Alan Nunes
