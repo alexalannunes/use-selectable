@@ -3,7 +3,9 @@
   "version": "1.0.2",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup src/index.ts --format esm,cjs --dts"
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "patch": "npm version patch",
+    "pub": "npm publish --access public"
   },
   "main": "dist/index.js",
   "module": "dist/index.js",
