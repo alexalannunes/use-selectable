@@ -27,5 +27,9 @@
     "@types/react": "^19.1.13",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/use-selectable.git"
   }
 }
