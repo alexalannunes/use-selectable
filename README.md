@@ -35,7 +35,7 @@ const users: User[] = [
 
 export default function App() {
   const {
-    selectedItems,
+    selected,
     isAllSelected,
     toggleItem,
     toggleAll,
@@ -67,7 +67,7 @@ export default function App() {
       </ul>
 
       <p>Total selected: {totalSelected}</p>
-      <pre>{JSON.stringify(selectedItems, null, 2)}</pre>
+      <pre>{JSON.stringify(selected, null, 2)}</pre>
     </div>
   );
 }
@@ -82,8 +82,7 @@ export default function App() {
 
 Returns an object with:
 
-- `selectedItems: T[]` → Array of currently selected items.
-- `selected: T[]` → Alias for `selectedItems`.
+- `selected: T[]` → Array of currently selected items.
 - `isAllSelected: boolean` → True if all items are selected.
 - `totalSelected: number` → Number of selected items.
 - `toggleItem(id: T[K])` → Toggle selection for an item by its id.

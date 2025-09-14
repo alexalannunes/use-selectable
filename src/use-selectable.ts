@@ -76,7 +76,7 @@ export function useSelectable<
     return items.size !== 0 && items.size === data.length;
   }, [items, data]);
 
-  const selectedItems = useMemo(() => {
+  const selected = useMemo(() => {
     let selectedItems: T[K][] = [];
     items.forEach((id) => {
       const exist = data.find((item) => item[key] === id);
@@ -90,9 +90,8 @@ export function useSelectable<
   const totalSelected = items.size;
 
   return {
-    selected: selectedItems,
+    selected,
     isAllSelected,
-    selectedItems,
     totalSelected,
     data,
     toggleItem,
