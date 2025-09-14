@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 
-export function useSelection<
+export function useSelectable<
   T,
   K extends keyof T = "id" extends keyof T ? "id" : keyof T
 >(data: T[], key: K = "id" as K) {

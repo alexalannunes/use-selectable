@@ -1,4 +1,4 @@
-# use-selection
+# use-selectable
 
 A lightweight React hook for managing item selection states in lists, tables, or any collection of data. Easily toggle items, select all, clear selections, and retrieve selected items.
 
@@ -7,20 +7,20 @@ A lightweight React hook for managing item selection states in lists, tables, or
 **Installation:**
 
 ```bash
-npm install use-selection
+npm install use-selectable
 ```
 
 or with Yarn:
 
 ```bash
-yarn add use-selection
+yarn add use-selectable
 ```
 
 **Usage:**
 
 ```tsx
 import React from 'react';
-import { useSelection } from 'use-selection';
+import { useSelectable } from 'use-selectable';
 
 interface User {
   id: number;
