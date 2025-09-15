@@ -19,8 +19,7 @@ yarn add use-selectable
 **Usage:**
 
 ```tsx
-import React from 'react';
-import { useSelectable } from 'use-selectable';
+import { useSelectable } from "use-selectable";
 
 interface User {
   id: number;
@@ -28,12 +27,12 @@ interface User {
 }
 
 const users: User[] = [
-  { id: 1, name: 'Alice' },
-  { id: 2, name: 'Bob' },
-  { id: 3, name: 'Charlie' },
+  { id: 1, name: "alex" },
+  { id: 2, name: "alan" },
+  { id: 3, name: "nunes" },
 ];
 
-export default function App() {
+function App() {
   const {
     selected,
     isAllSelected,
@@ -42,12 +41,12 @@ export default function App() {
     clear,
     totalSelected,
     isSelected,
-  } = useSelection(users, 'id' /* default */);
+  } = useSelectable(users, "id" /* default */);
 
   return (
     <div>
       <button onClick={toggleAll}>
-        {isAllSelected ? 'Deselect All' : 'Select All'}
+        {isAllSelected ? "Deselect All" : "Select All"}
       </button>
       <button onClick={clear}>Clear</button>
 
@@ -71,11 +70,13 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
 ```
 
 **API:**
 
-`useSelection<T, K extends keyof T>(data: T[], key?: K)`
+`useSelectable<T, K extends keyof T>(data: T[], key?: K)`
 
 - `data: T[]` (required) → Array of items to manage selection for.
 - `key: K` (default `'id'`) → The property of each item used as unique identifier.
