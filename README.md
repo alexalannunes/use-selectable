@@ -42,7 +42,7 @@ export default function App() {
     clear,
     totalSelected,
     isSelected,
-  } = useSelection(users, 'id');
+  } = useSelection(users, 'id' /* default */);
 
   return (
     <div>
