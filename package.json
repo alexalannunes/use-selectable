@@ -15,7 +15,10 @@
   "keywords": [
     "react",
     "hook",
-    "selection"
+    "selection",
+    "checkbox",
+    "react-hooks",
+    "selectable"
   ],
   "license": "MIT",
   "author": "alexalannunes",
