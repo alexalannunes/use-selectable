@@ -33,6 +33,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexalannunes/use-selectable.git"
+    "url": "git+https://github.com/alexalannunes/use-selectable.git"
   }
 }
