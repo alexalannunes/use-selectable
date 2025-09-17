@@ -105,5 +105,8 @@ Returns an object with:
 
 *These changes are planned for a future release and may involve a **major version bump** if they introduce breaking changes.*
 
+## More
 
-**License:** MIT © Alex Alan Nunes
+Try other hooks
+
+* [use-deletable](https://github.com/alexalannunes/use-deletable)
