@@ -109,4 +109,4 @@ Returns an object with:
 
 Try other hooks
 
-* [use-deletable](https://github.com/alexalannunes/use-deletable)
+* [use-deletable](https://www.npmjs.com/package/use-deletable)
